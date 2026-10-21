@@ -1,0 +1,175 @@
+{
+  "app": { "name": "Nivora", "tagline": "Every Due. Every Rupee. Under Control." },
+  "common": {
+    "save": "Save", "cancel": "Cancel", "create": "Create", "edit": "Edit", "delete": "Delete",
+    "search": "Search", "actions": "Actions", "status": "Status", "close": "Close", "back": "Back",
+    "next": "Next", "submit": "Submit", "loading": "Loading...", "yes": "Yes", "no": "No",
+    "confirm": "Confirm", "reason": "Reason", "notes": "Notes", "phone": "Phone", "name": "Name",
+    "email": "Email", "language": "Language", "english": "English", "tamil": "Tamil",
+    "active": "Active", "inactive": "Inactive", "all": "All", "total": "Total", "date": "Date",
+    "amount": "Amount", "from": "From", "to": "To", "village": "Village", "logout": "Logout",
+    "changePassword": "Change Password", "required": "This field is required",
+    "somethingWentWrong": "Something went wrong", "noData": "No data", "optional": "Optional"
+  },
+  "nav": {
+    "dashboard": "Dashboard", "customers": "Customers", "loans": "Loans", "dues": "Dues",
+    "chitGroups": "Chit Groups", "calculator": "Calculator", "users": "Users",
+    "notifications": "Notifications", "settings": "Settings", "reports": "Audit Logs",
+    "platform": "Platform Console"
+  },
+  "auth": {
+    "tenantCode": "Tenant Code", "password": "Password", "login": "Log in",
+    "loginTitle": "Log in to Nivora", "platformLoginTitle": "Platform Console Login",
+    "heroTitle": "Every Due. Every Rupee. Under Control.", "heroSubtitle": "Manage customers, loans, interest calculations, repayment schedules and collections in one place - from a phone, tablet or desktop.",
+    "featureLedger": "One screen for today's, upcoming and overdue collections",
+    "featureReminders": "Automatic email and in-app payment reminders",
+    "featureBilingual": "Works fully in English and Tamil",
+    "invalidCredentials": "Invalid tenant code, email or password",
+    "acceptInviteTitle": "Set your password", "newPassword": "New Password",
+    "confirmPassword": "Confirm Password", "passwordsMustMatch": "Passwords must match",
+    "activateAccount": "Activate account", "accountActivated": "Account activated, you can now log in",
+    "currentPassword": "Current Password", "changePasswordTitle": "Change your password",
+    "forgotPassword": "Forgot password?", "forgotPasswordTitle": "Reset your password",
+    "sendResetLink": "Send reset link", "mustChangePassword": "You must change your temporary password",
+    "platformConsole": "Platform Console (Tenant Admin)", "tenantLogin": "Tenant Login"
+  },
+  "dashboard": {
+    "dueToday": "Due Today", "collectedToday": "Collected Today", "overdue": "Overdue",
+    "upcoming7Days": "Upcoming (7 days)", "activeLoans": "Active Loans",
+    "totalOutstanding": "Total Outstanding", "penaltyAccrued": "Penalty Accrued (Unpaid)",
+    "penaltyCollectedFy": "Penalty Collected (this FY)",
+    "greetingMorning": "Good morning", "greetingAfternoon": "Good afternoon", "greetingEvening": "Good evening",
+    "subtitle": "Here's what needs your attention today."
+  },
+  "customers": {
+    "title": "Customers", "totalCount": "{{count}} customers", "addCustomer": "Add Customer", "editCustomer": "Edit Customer",
+    "customerNo": "Customer No", "altPhone": "Alternate Phone", "line": "Street / Village",
+    "taluk": "Taluk", "district": "District", "pincode": "Pincode", "pincodeInvalid": "Pincode must be 6 digits",
+    "occupation": "Occupation", "currentAddress": "Current Address", "permanentAddress": "Permanent Address",
+    "permanentSameAsCurrent": "Permanent address is the same as current address",
+    "aadharInvalid": "Aadhaar number must be 12 digits", "aadharMandatory": "Aadhaar ID proof is mandatory",
+    "idProofs": "ID Proofs", "idProofNumber": "ID Number",
+    "idProofType": "ID Proof Type", "idProofAadhaar": "Aadhaar Card", "idProofPan": "PAN Card",
+    "idProofRation": "Ration Card", "idProofOther": "Other", "idProofOtherName": "ID Proof Name",
+    "idProofOtherNameRequired": "Please name the 'Other' ID proof",
+    "idProofDocument": "ID Proof Document", "idProofDocumentRequired": "ID proof document is required",
+    "photo": "Photo", "removePhoto": "Remove photo", "chooseFile": "Choose file", "changeFile": "Change file",
+    "viewCurrent": "View", "willBeRemoved": "Will be removed", "fileTypeInvalid": "File must be a PDF, PNG, JPG or JPEG",
+    "fileTooLarge": "File must be 8 MB or smaller", "phoneInvalid": "10-digit Indian mobile number",
+    "detail": "Customer Detail", "loans": "Loans", "payments": "Payments", "upcomingDues": "Upcoming Dues",
+    "outstandingTotal": "Outstanding Total", "penaltiesDue": "Penalties Due", "defaults": "Defaults",
+    "defaultMethod": "Default Interest Method", "defaultPenalty": "Default Penalty Profile",
+    "activate": "Activate", "deactivate": "Deactivate", "hasOverdue": "Has Overdue", "customerLimitReached": "Customer limit reached. Contact the platform admin.",
+    "quotaWarning": "You are close to your customer quota",
+    "guarantors": "Guarantors", "addGuarantor": "Add Guarantor", "editGuarantor": "Edit Guarantor",
+    "noGuarantors": "No guarantors added yet", "deleteGuarantorConfirm": "Permanently delete this guarantor and their documents? This cannot be undone.",
+    "applyToExistingLoans": "Apply to Existing Loans", "applyToExistingLoansHint": "This will apply the default penalty profile above to every active loan listed below. Each loan keeps whatever penalty has already accrued; only new accrual follows the new profile.",
+    "noActiveLoans": "No active loans to update", "appliedToLoans": "Penalty profile applied to existing loans"
+  },
+  "loans": {
+    "title": "Loans", "newLoan": "New Loan", "loanNo": "Loan No", "principal": "Principal",
+    "method": "Interest Method", "rate": "Rate (%)", "rateBasis": "Rate Basis", "perAnnum": "Per Annum",
+    "perMonth": "Per Month", "frequency": "Frequency", "daily": "Daily", "weekly": "Weekly", "monthly": "Monthly",
+    "tenure": "Tenure", "tenureUnit": "Tenure Unit", "days": "Days", "weeks": "Weeks", "months": "Months", "years": "Years",
+    "startDate": "Start Date", "firstDueDate": "First Due Date", "schedule": "Schedule", "preview": "Preview",
+    "instalmentAmount": "Instalment Amount", "totalInterest": "Total Interest", "totalPayable": "Total Payable",
+    "instalmentCount": "No. of Instalments", "effectiveRate": "Effective Annual Rate",
+    "flat": "Flat", "reducingBalance": "Reducing Balance", "interestOnly": "Interest-only", "compound": "Compound",
+    "customSchedule": "Custom Schedule", "chitAuction": "Chit Auction", "compoundingPeriod": "Compounding Period",
+    "repaymentOption": "Repayment Option", "bullet": "Bullet", "equal": "Equal Instalments",
+    "penaltyOverride": "Penalty Override", "fromCustomer": "from customer", "fromTenant": "from tenant",
+    "fromSystem": "system default", "resetToDefault": "Reset to default", "createLoan": "Create Loan",
+    "cancel": "Cancel Loan", "cancelReason": "Reason for cancellation", "status": "Status",
+    "active": "Active", "closed": "Closed", "cancelled": "Cancelled", "outstanding": "Outstanding",
+    "skipSunday": "Skip Sunday", "dayOfMonth": "Day of Month", "weekday": "Weekday",
+    "customRows": "Custom Schedule Rows", "addRow": "Add Row", "dueDate": "Due Date",
+    "principalPart": "Principal Part", "interestPart": "Interest Part"
+  },
+  "dues": {
+    "title": "Dues", "today": "Today", "upcoming": "Upcoming", "overdue": "Overdue", "paid": "Paid", "all": "All",
+    "instalmentDue": "Instalment Due", "penaltyDue": "Penalty Due", "balance": "Balance",
+    "markPaid": "Mark Paid", "recordPayment": "Record Payment", "waivePenalty": "Waive Penalty",
+    "paymentAmount": "Payment Amount", "paymentMode": "Mode", "cash": "Cash", "upi": "UPI", "bank": "Bank",
+    "reference": "Reference", "bulkMarkPaid": "Bulk Mark Paid", "selectedRows": "{{count}} rows selected",
+    "waiverAmount": "Waiver Amount", "paymentExceedsOutstanding": "Payment exceeds the outstanding balance",
+    "receiptNo": "Receipt No", "reversePayment": "Reverse Payment", "auctionPending": "Auction Pending",
+    "reminderActive": "Reminder Active", "customer": "Customer", "loanOrChit": "Loan / Chit No",
+    "history": "Payment History", "search": "Search", "searchPlaceholder": "Customer, loan no, receipt no, village...",
+    "dateFrom": "From", "dateTo": "To", "clearFilters": "Clear Filters", "allFrequencies": "All Frequencies",
+    "allMethods": "All Methods", "paymentDetails": "Payment Details", "penaltyPaid": "Penalty Paid",
+    "interestPaid": "Interest Paid", "principalPaid": "Principal Paid", "noPayments": "No payments recorded yet",
+    "clickForHistory": "Click a row to view its payment history", "viewHistory": "View payment history",
+    "reversePaymentConfirm": "This will undo receipt {{receiptNo}} and reopen the instalments it settled. This cannot be undone."
+  },
+  "chit": {
+    "title": "Chit Groups", "newGroup": "New Chit Group", "groupNo": "Group No", "groupName": "Group Name",
+    "chitValue": "Chit Value", "memberCount": "Number of Members", "subscription": "Base Subscription",
+    "commissionPercent": "Foreman Commission %", "maxDiscountPercent": "Max Discount % (warning)",
+    "postPrizeRule": "Post-Prize Rule", "sameAsOthers": "Same as others (dividend continues)",
+    "fullSubscription": "Full subscription (no dividend)", "members": "Members", "addMember": "Add Member",
+    "postAuction": "Post Auction", "auctionDate": "Auction Date", "winner": "Winning Member",
+    "discount": "Discount Bid", "commission": "Commission", "dividendPool": "Dividend Pool",
+    "dividendPerMember": "Dividend / Member", "netInstalment": "Net Instalment", "prize": "Prize to Winner",
+    "prizePaidOn": "Prize Paid On", "prizeMode": "Prize Mode", "undoAuction": "Undo Auction",
+    "period": "Period", "prized": "Prized", "unprized": "Un-prized", "regulatoryNote": "Record-keeping aid only - obtain legal review before enabling this module for a tenant."
+  },
+  "calculator": {
+    "title": "Calculator", "loanTab": "Loan", "penaltyTab": "Penalty What-if", "chitTab": "Chit",
+    "createLoanFromThis": "Create loan from this", "daysLate": "Days Since Due", "balance": "Unpaid Balance",
+    "penaltyType": "Penalty Type", "graceDays": "Grace Days", "penaltyAmount": "Penalty Amount",
+    "exportCsv": "Export CSV", "print": "Print"
+  },
+  "penalty": {
+    "none": "None", "fixedOneTime": "Fixed, One Time", "fixedPerDay": "Fixed, Per Day",
+    "percentOneTime": "Percent, One Time", "percentPerDay": "Percent, Per Day", "penalInterestPa": "Penal Interest (% p.a.)",
+    "waivable": "Waivable", "capAmount": "Cap amount ₹", "capPercent": "Cap %",
+    "sourceLoan": "Set on this loan"
+  },
+  "users": {
+    "title": "Users", "inviteUser": "Invite User", "role": "Role", "adm": "Admin", "staff": "Staff",
+    "seatUsage": "{{used}} of {{max}} seats used", "disable": "Disable", "enable": "Enable",
+    "resendInvite": "Resend Invite", "lastLogin": "Last Login", "invited": "Invited",
+    "seatLimitReached": "Seat limit reached", "lastAdmProtected": "The last active Adm cannot be disabled or demoted"
+  },
+  "notifications": {
+    "title": "Notifications", "markAllRead": "Mark all read", "unreadOnly": "Unread only",
+    "noNotifications": "No notifications", "digest": "Daily Digest", "emailFailed": "Email could not be sent"
+  },
+  "settings": {
+    "title": "Settings", "general": "General", "defaults": "Defaults", "reminders": "Reminders",
+    "businessName": "Business Name", "defaultLanguage": "Default Language", "financialYear": "Financial Year",
+    "startMonth": "Start Month", "startDay": "Start Day", "currentFy": "Current FY", "nextBoundary": "Next Boundary",
+    "penaltyDefault": "Tenant Penalty Default",
+    "sendTime": "Send Time", "emailEnabled": "Email Enabled", "inAppEnabled": "In-app Enabled",
+    "includeOverdue": "Continue reminders while overdue", "overdueDays": "Stop after (days)",
+    "recipients": "Recipient Emails", "digestLanguage": "Digest Language", "testEmail": "Send Test Email",
+    "sendDigestNow": "Send Digest Now", "testEmailSuccess": "Test email sent successfully",
+    "testEmailFailed": "Test email failed", "both": "Both", "userLanguage": "Recipient's Language"
+  },
+  "reports": {
+    "title": "Audit Logs", "auditLog": "Audit Log", "collections": "Collections", "penalties": "Penalties",
+    "user": "User", "entity": "Entity", "action": "Action", "summary": "Summary", "at": "At",
+    "loanPortfolio": "Loan Portfolio", "overdueAging": "Overdue / Aging", "customersTab": "Customers",
+    "downloadXlsx": "Download XLSX", "downloadPdf": "Download PDF", "allStatuses": "All Statuses"
+  },
+  "platform": {
+    "title": "Platform Console", "tenants": "Tenants", "onboardTenant": "Onboard Tenant",
+    "tenantName": "Business Name", "tenantCode": "Tenant Code", "adminName": "Admin Name",
+    "adminEmail": "Admin Email", "maxCustomers": "Customer Quota", "seatUsage": "Seats",
+    "customerUsage": "Customers", "activeLoans": "Active Loans", "suspend": "Suspend", "reactivate": "Reactivate",
+    "resendInvite": "Resend Invite", "editLimits": "Edit Limits", "maxUsers": "Max Users",
+    "capacity": "Capacity", "storageUsed": "Storage Used", "totalQuota": "Total Allocated Quota",
+    "totalCustomers": "Total Actual Customers", "duplicateTenantCode": "Tenant code already exists"
+  },
+  "errors": {
+    "VALIDATION_ERROR": "Please check the highlighted fields", "AUTH_REQUIRED": "Please log in",
+    "TOKEN_EXPIRED": "Your session has expired, please log in again", "INVALID_CREDENTIALS": "Invalid credentials",
+    "ACCOUNT_LOCKED": "Account locked, try again later", "TENANT_SUSPENDED": "This tenant is suspended",
+    "FORBIDDEN": "You do not have permission to do that", "NOT_FOUND": "Not found",
+    "CONFLICT": "This conflicts with existing data", "STALE_VERSION": "This record changed, please retry",
+    "BUSINESS_RULE": "This action is not allowed", "SEAT_LIMIT_REACHED": "User seat limit reached",
+    "CUSTOMER_LIMIT_REACHED": "Customer limit reached", "AUCTION_ALREADY_POSTED": "Auction already posted for this period",
+    "DUPLICATE_TENANT_CODE": "Tenant code already exists", "RATE_LIMITED": "Too many attempts, please wait",
+    "INTERNAL_ERROR": "Unexpected error, please try again"
+  }
+}

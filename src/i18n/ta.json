@@ -1,0 +1,175 @@
+{
+  "app": { "name": "Nivora", "tagline": "ஒவ்வொரு தவணையும். ஒவ்வொரு ரூபாயும். கட்டுப்பாட்டில்." },
+  "common": {
+    "save": "சேமி", "cancel": "ரத்து செய்", "create": "உருவாக்கு", "edit": "திருத்து", "delete": "அழி",
+    "search": "தேடு", "actions": "செயல்கள்", "status": "நிலை", "close": "மூடு", "back": "பின்",
+    "next": "அடுத்து", "submit": "சமர்ப்பி", "loading": "ஏற்றுகிறது...", "yes": "ஆம்", "no": "இல்லை",
+    "confirm": "உறுதிப்படுத்து", "reason": "காரணம்", "notes": "குறிப்புகள்", "phone": "தொலைபேசி", "name": "பெயர்",
+    "email": "மின்னஞ்சல்", "language": "மொழி", "english": "ஆங்கிலம்", "tamil": "தமிழ்",
+    "active": "செயலில்", "inactive": "செயலற்ற", "all": "அனைத்தும்", "total": "மொத்தம்", "date": "தேதி",
+    "amount": "தொகை", "from": "முதல்", "to": "வரை", "village": "கிராமம்", "logout": "வெளியேறு",
+    "changePassword": "கடவுச்சொல்லை மாற்று", "required": "இந்த புலம் தேவை",
+    "somethingWentWrong": "ஏதோ தவறு நடந்தது", "noData": "தரவு இல்லை", "optional": "விருப்பத்திற்கு"
+  },
+  "nav": {
+    "dashboard": "டாஷ்போர்டு", "customers": "வாடிக்கையாளர்கள்", "loans": "கடன்கள்", "dues": "தவணைகள்",
+    "chitGroups": "சீட்டு குழுக்கள்", "calculator": "கணிப்பான்", "users": "பயனர்கள்",
+    "notifications": "அறிவிப்புகள்", "settings": "அமைப்புகள்", "reports": "தணிக்கைப் பதிவுகள்",
+    "platform": "தள கன்சோல்"
+  },
+  "auth": {
+    "tenantCode": "நிறுவன குறியீடு", "password": "கடவுச்சொல்", "login": "உள்நுழை",
+    "loginTitle": "Nivora இல் உள்நுழைக", "platformLoginTitle": "தள கன்சோல் உள்நுழைவு",
+    "heroTitle": "ஒவ்வொரு தவணையும். ஒவ்வொரு ரூபாயும். கட்டுப்பாட்டில்.", "heroSubtitle": "வாடிக்கையாளர்கள், கடன்கள், வட்டி கணக்கீடுகள், திருப்பிச் செலுத்தும் அட்டவணைகள் மற்றும் வசூல்களை ஒரே இடத்தில் நிர்வகிக்கவும் - மொபைல், டேப்லெட் அல்லது டெஸ்க்டாப்பில்.",
+    "featureLedger": "இன்றைய, வரவுள்ள மற்றும் தாமதமான வசூல்களுக்கு ஒரே திரை",
+    "featureReminders": "தானியங்கு மின்னஞ்சல் மற்றும் செயலி நினைவூட்டல்கள்",
+    "featureBilingual": "ஆங்கிலம் மற்றும் தமிழில் முழுமையாக செயல்படுகிறது",
+    "invalidCredentials": "தவறான நிறுவன குறியீடு, மின்னஞ்சல் அல்லது கடவுச்சொல்",
+    "acceptInviteTitle": "உங்கள் கடவுச்சொல்லை அமைக்கவும்", "newPassword": "புதிய கடவுச்சொல்",
+    "confirmPassword": "கடவுச்சொல்லை உறுதிப்படுத்து", "passwordsMustMatch": "கடவுச்சொற்கள் பொருந்த வேண்டும்",
+    "activateAccount": "கணக்கை செயல்படுத்து", "accountActivated": "கணக்கு செயல்படுத்தப்பட்டது, இப்போது உள்நுழையலாம்",
+    "currentPassword": "தற்போதைய கடவுச்சொல்", "changePasswordTitle": "உங்கள் கடவுச்சொல்லை மாற்றவும்",
+    "forgotPassword": "கடவுச்சொல் மறந்துவிட்டதா?", "forgotPasswordTitle": "கடவுச்சொல்லை மீட்டமை",
+    "sendResetLink": "மீட்டமைப்பு இணைப்பை அனுப்பு", "mustChangePassword": "உங்கள் தற்காலிக கடவுச்சொல்லை மாற்ற வேண்டும்",
+    "platformConsole": "தள கன்சோல் (நிறுவன நிர்வாகி)", "tenantLogin": "நிறுவன உள்நுழைவு"
+  },
+  "dashboard": {
+    "dueToday": "இன்று செலுத்த வேண்டியவை", "collectedToday": "இன்று வசூலிக்கப்பட்டது", "overdue": "தாமதமானவை",
+    "upcoming7Days": "வரவுள்ளவை (7 நாட்கள்)", "activeLoans": "செயலில் உள்ள கடன்கள்",
+    "totalOutstanding": "மொத்த நிலுவை", "penaltyAccrued": "சேர்ந்த அபராதம் (செலுத்தப்படாதது)",
+    "penaltyCollectedFy": "வசூலிக்கப்பட்ட அபராதம் (இந்த நிதியாண்டு)",
+    "greetingMorning": "காலை வணக்கம்", "greetingAfternoon": "மதிய வணக்கம்", "greetingEvening": "மாலை வணக்கம்",
+    "subtitle": "இன்று உங்கள் கவனம் தேவைப்படுவது இதோ."
+  },
+  "customers": {
+    "title": "வாடிக்கையாளர்கள்", "totalCount": "{{count}} வாடிக்கையாளர்கள்", "addCustomer": "வாடிக்கையாளரைச் சேர்", "editCustomer": "வாடிக்கையாளரைத் திருத்து",
+    "customerNo": "வாடிக்கையாளர் எண்", "altPhone": "மாற்று தொலைபேசி", "line": "தெரு / கிராமம்",
+    "taluk": "தாலுகா", "district": "மாவட்டம்", "pincode": "அஞ்சல் குறியீடு", "pincodeInvalid": "அஞ்சல் குறியீடு 6 இலக்கங்களாக இருக்க வேண்டும்",
+    "occupation": "தொழில்", "currentAddress": "தற்போதைய முகவரி", "permanentAddress": "நிரந்தர முகவரி",
+    "permanentSameAsCurrent": "நிரந்தர முகவரி தற்போதைய முகவரியைப் போலவே",
+    "aadharInvalid": "ஆதார் எண் 12 இலக்கங்களாக இருக்க வேண்டும்", "aadharMandatory": "ஆதார் அடையாள சான்று கட்டாயம்",
+    "idProofs": "அடையாள சான்றுகள்", "idProofNumber": "அடையாள எண்",
+    "idProofType": "அடையாள சான்று வகை", "idProofAadhaar": "ஆதார் அட்டை", "idProofPan": "பான் அட்டை",
+    "idProofRation": "குடும்ப அட்டை", "idProofOther": "மற்றவை", "idProofOtherName": "அடையாள சான்று பெயர்",
+    "idProofOtherNameRequired": "'மற்றவை' அடையாள சான்றுக்கு பெயரிடவும்",
+    "idProofDocument": "அடையாள சான்று ஆவணம்", "idProofDocumentRequired": "அடையாள சான்று ஆவணம் தேவை",
+    "photo": "புகைப்படம்", "removePhoto": "புகைப்படத்தை நீக்கு", "chooseFile": "கோப்பைத் தேர்ந்தெடு", "changeFile": "கோப்பை மாற்று",
+    "viewCurrent": "காண்க", "willBeRemoved": "நீக்கப்படும்", "fileTypeInvalid": "கோப்பு PDF, PNG, JPG அல்லது JPEG ஆக இருக்க வேண்டும்",
+    "fileTooLarge": "கோப்பு 8 MB அல்லது அதற்கும் குறைவாக இருக்க வேண்டும்", "phoneInvalid": "10-இலக்க இந்திய மொபைல் எண்",
+    "detail": "வாடிக்கையாளர் விவரம்", "loans": "கடன்கள்", "payments": "பணம் செலுத்துதல்கள்", "upcomingDues": "வரவுள்ள தவணைகள்",
+    "outstandingTotal": "மொத்த நிலுவை", "penaltiesDue": "செலுத்த வேண்டிய அபராதங்கள்", "defaults": "இயல்புநிலைகள்",
+    "defaultMethod": "இயல்புநிலை வட்டி முறை", "defaultPenalty": "இயல்புநிலை அபராத விவரக்குறிப்பு",
+    "activate": "செயல்படுத்து", "deactivate": "செயலிழக்கச் செய்", "hasOverdue": "தாமதம் உள்ளது", "customerLimitReached": "வாடிக்கையாளர் வரம்பு எட்டப்பட்டது. தள நிர்வாகியை தொடர்பு கொள்ளவும்.",
+    "quotaWarning": "உங்கள் வாடிக்கையாளர் ஒதுக்கீட்டை நெருங்குகிறீர்கள்",
+    "guarantors": "பிணையாளர்கள்", "addGuarantor": "பிணையாளரைச் சேர்", "editGuarantor": "பிணையாளரைத் திருத்து",
+    "noGuarantors": "இன்னும் பிணையாளர்கள் சேர்க்கப்படவில்லை", "deleteGuarantorConfirm": "இந்த பிணையாளரையும் அவரது ஆவணங்களையும் நிரந்தரமாக நீக்கவா? இதை மீட்க முடியாது.",
+    "applyToExistingLoans": "ஏற்கனவே உள்ள கடன்களுக்குப் பயன்படுத்து", "applyToExistingLoansHint": "இது மேலே உள்ள இயல்புநிலை அபராத விவரக்குறிப்பை கீழே பட்டியலிடப்பட்டுள்ள ஒவ்வொரு செயலில் உள்ள கடனுக்கும் பயன்படுத்தும். ஏற்கனவே சேர்ந்த அபராதம் அப்படியே இருக்கும்; புதிய சேர்க்கை மட்டும் புதிய விவரக்குறிப்பைப் பின்பற்றும்.",
+    "noActiveLoans": "புதுப்பிக்க செயலில் உள்ள கடன்கள் இல்லை", "appliedToLoans": "அபராத விவரக்குறிப்பு ஏற்கனவே உள்ள கடன்களுக்குப் பயன்படுத்தப்பட்டது"
+  },
+  "loans": {
+    "title": "கடன்கள்", "newLoan": "புதிய கடன்", "loanNo": "கடன் எண்", "principal": "அசல்",
+    "method": "வட்டி முறை", "rate": "வட்டி விகிதம் (%)", "rateBasis": "விகித அடிப்படை", "perAnnum": "ஆண்டுக்கு",
+    "perMonth": "மாதத்திற்கு", "frequency": "அடுக்கு", "daily": "தினசரி", "weekly": "வாராந்திரம்", "monthly": "மாதாந்திரம்",
+    "tenure": "காலஅளவு", "tenureUnit": "காலஅளவு அலகு", "days": "நாட்கள்", "weeks": "வாரங்கள்", "months": "மாதங்கள்", "years": "ஆண்டுகள்",
+    "startDate": "தொடக்க தேதி", "firstDueDate": "முதல் தவணை தேதி", "schedule": "அட்டவணை", "preview": "முன்னோட்டம்",
+    "instalmentAmount": "தவணை தொகை", "totalInterest": "மொத்த வட்டி", "totalPayable": "மொத்தம் செலுத்த வேண்டியது",
+    "instalmentCount": "தவணைகளின் எண்ணிக்கை", "effectiveRate": "பயனுள்ள ஆண்டு விகிதம்",
+    "flat": "சமமான வட்டி", "reducingBalance": "குறைந்து வரும் இருப்பு", "interestOnly": "வட்டி மட்டும்", "compound": "கூட்டு வட்டி",
+    "customSchedule": "தனிப்பயன் அட்டவணை", "chitAuction": "சீட்டு ஏலம்", "compoundingPeriod": "கூட்டு வட்டி காலம்",
+    "repaymentOption": "திருப்பிச் செலுத்தும் விருப்பம்", "bullet": "ஒரேயடியாக", "equal": "சம தவணைகள்",
+    "penaltyOverride": "அபராத மேலெழுதல்", "fromCustomer": "வாடிக்கையாளரிடமிருந்து", "fromTenant": "நிறுவனத்திலிருந்து",
+    "fromSystem": "கணினி இயல்புநிலை", "resetToDefault": "இயல்புநிலைக்கு மீட்டமை", "createLoan": "கடனை உருவாக்கு",
+    "cancel": "கடனை ரத்து செய்", "cancelReason": "ரத்து செய்வதற்கான காரணம்", "status": "நிலை",
+    "active": "செயலில்", "closed": "முடிவுற்றது", "cancelled": "ரத்து செய்யப்பட்டது", "outstanding": "நிலுவை",
+    "skipSunday": "ஞாயிறு தவிர்", "dayOfMonth": "மாத நாள்", "weekday": "வார நாள்",
+    "customRows": "தனிப்பயன் அட்டவணை வரிசைகள்", "addRow": "வரிசையைச் சேர்", "dueDate": "தவணை தேதி",
+    "principalPart": "அசல் பகுதி", "interestPart": "வட்டி பகுதி"
+  },
+  "dues": {
+    "title": "தவணைகள்", "today": "இன்று", "upcoming": "வரவுள்ளவை", "overdue": "தாமதமானவை", "paid": "செலுத்தியவை", "all": "அனைத்தும்",
+    "instalmentDue": "செலுத்த வேண்டிய தவணை", "penaltyDue": "செலுத்த வேண்டிய அபராதம்", "balance": "இருப்பு",
+    "markPaid": "செலுத்தியதாக குறி", "recordPayment": "பணம் செலுத்துதலை பதிவு செய்", "waivePenalty": "அபராதத்தை தள்ளுபடி செய்",
+    "paymentAmount": "செலுத்தும் தொகை", "paymentMode": "முறை", "cash": "பணம்", "upi": "UPI", "bank": "வங்கி",
+    "reference": "குறிப்பு எண்", "bulkMarkPaid": "அனைத்தையும் செலுத்தியதாக குறி", "selectedRows": "{{count}} வரிசைகள் தேர்ந்தெடுக்கப்பட்டன",
+    "waiverAmount": "தள்ளுபடி தொகை", "paymentExceedsOutstanding": "பணம் நிலுவையை விட அதிகம்",
+    "receiptNo": "ரசீது எண்", "reversePayment": "பணம் செலுத்துதலை மாற்று", "auctionPending": "ஏலம் நிலுவையில்",
+    "reminderActive": "நினைவூட்டல் செயலில்", "customer": "வாடிக்கையாளர்", "loanOrChit": "கடன் / சீட்டு எண்",
+    "history": "பணம் செலுத்திய வரலாறு", "search": "தேடு", "searchPlaceholder": "வாடிக்கையாளர், கடன் எண், ரசீது எண், கிராமம்...",
+    "dateFrom": "இதிலிருந்து", "dateTo": "வரை", "clearFilters": "வடிப்பான்களை அழி", "allFrequencies": "அனைத்து அடுக்குகள்",
+    "allMethods": "அனைத்து முறைகள்", "paymentDetails": "பணம் செலுத்திய விவரங்கள்", "penaltyPaid": "செலுத்திய அபராதம்",
+    "interestPaid": "செலுத்திய வட்டி", "principalPaid": "செலுத்திய அசல்", "noPayments": "இதுவரை பணம் செலுத்தப்படவில்லை",
+    "clickForHistory": "பணம் செலுத்திய வரலாற்றைக் காண ஒரு வரிசையைக் கிளிக் செய்யவும்", "viewHistory": "பணம் செலுத்திய வரலாற்றைக் காண்க",
+    "reversePaymentConfirm": "இது ரசீது {{receiptNo}}-ஐ மாற்றி, அது தீர்த்த தவணைகளை மீண்டும் திறக்கும். இதை மாற்ற முடியாது."
+  },
+  "chit": {
+    "title": "சீட்டு குழுக்கள்", "newGroup": "புதிய சீட்டு குழு", "groupNo": "குழு எண்", "groupName": "குழு பெயர்",
+    "chitValue": "சீட்டு மதிப்பு", "memberCount": "உறுப்பினர்களின் எண்ணிக்கை", "subscription": "அடிப்படை சந்தா",
+    "commissionPercent": "முன்னோடி கமிஷன் %", "maxDiscountPercent": "அதிகபட்ச தள்ளுபடி % (எச்சரிக்கை)",
+    "postPrizeRule": "பரிசுக்குப் பிந்தைய விதி", "sameAsOthers": "மற்றவர்களைப் போலவே (ஈவுத்தொகை தொடரும்)",
+    "fullSubscription": "முழு சந்தா (ஈவுத்தொகை இல்லை)", "members": "உறுப்பினர்கள்", "addMember": "உறுப்பினரைச் சேர்",
+    "postAuction": "ஏலத்தை பதிவு செய்", "auctionDate": "ஏலம் தேதி", "winner": "வெற்றி பெற்ற உறுப்பினர்",
+    "discount": "ஏல தள்ளுபடி", "commission": "கமிஷன்", "dividendPool": "ஈவுத்தொகை தொகுப்பு",
+    "dividendPerMember": "உறுப்பினருக்கான ஈவுத்தொகை", "netInstalment": "நிகர தவணை", "prize": "வெற்றியாளருக்கான பரிசு",
+    "prizePaidOn": "பரிசு செலுத்தப்பட்ட தேதி", "prizeMode": "பரிசு முறை", "undoAuction": "ஏலத்தை செயல்தவிர்",
+    "period": "காலம்", "prized": "பரிசு பெற்றவர்", "unprized": "பரிசு பெறாதவர்", "regulatoryNote": "இது ஒரு பதிவு உதவி மட்டுமே - இந்த தொகுதியை இயக்கும் முன் சட்ட ஆலோசனை பெறவும்."
+  },
+  "calculator": {
+    "title": "கணிப்பான்", "loanTab": "கடன்", "penaltyTab": "அபராத கணிப்பு", "chitTab": "சீட்டு",
+    "createLoanFromThis": "இதிலிருந்து கடனை உருவாக்கு", "daysLate": "தவணை முதல் நாட்கள்", "balance": "செலுத்தப்படாத இருப்பு",
+    "penaltyType": "அபராத வகை", "graceDays": "இலவச நாட்கள்", "penaltyAmount": "அபராத தொகை",
+    "exportCsv": "CSV ஏற்றுமதி", "print": "அச்சிடு"
+  },
+  "penalty": {
+    "none": "இல்லை", "fixedOneTime": "நிலையானது, ஒரு முறை", "fixedPerDay": "நிலையானது, ஒரு நாளைக்கு",
+    "percentOneTime": "சதவீதம், ஒரு முறை", "percentPerDay": "சதவீதம், ஒரு நாளைக்கு", "penalInterestPa": "அபராத வட்டி (% ஆண்டுக்கு)",
+    "waivable": "தள்ளுபடி செய்யக்கூடியது", "capAmount": "உச்ச தொகை ₹", "capPercent": "உச்ச %",
+    "sourceLoan": "இந்தக் கடனில் அமைக்கப்பட்டது"
+  },
+  "users": {
+    "title": "பயனர்கள்", "inviteUser": "பயனரை அழை", "role": "பங்கு", "adm": "நிர்வாகி", "staff": "ஊழியர்",
+    "seatUsage": "{{max}} இல் {{used}} இடங்கள் பயன்பாட்டில்", "disable": "செயலிழக்கச் செய்", "enable": "செயல்படுத்து",
+    "resendInvite": "அழைப்பை மீண்டும் அனுப்பு", "lastLogin": "கடைசி உள்நுழைவு", "invited": "அழைக்கப்பட்டது",
+    "seatLimitReached": "இட வரம்பு எட்டப்பட்டது", "lastAdmProtected": "கடைசி செயலில் உள்ள நிர்வாகியை செயலிழக்கச் செய்ய/பதவி இறக்க முடியாது"
+  },
+  "notifications": {
+    "title": "அறிவிப்புகள்", "markAllRead": "அனைத்தையும் படித்ததாக குறி", "unreadOnly": "படிக்காதவை மட்டும்",
+    "noNotifications": "அறிவிப்புகள் இல்லை", "digest": "தினசரி சுருக்கம்", "emailFailed": "மின்னஞ்சல் அனுப்ப முடியவில்லை"
+  },
+  "settings": {
+    "title": "அமைப்புகள்", "general": "பொது", "defaults": "இயல்புநிலைகள்", "reminders": "நினைவூட்டல்கள்",
+    "businessName": "நிறுவனப் பெயர்", "defaultLanguage": "இயல்புநிலை மொழி", "financialYear": "நிதியாண்டு",
+    "startMonth": "தொடக்க மாதம்", "startDay": "தொடக்க நாள்", "currentFy": "தற்போதைய நிதியாண்டு", "nextBoundary": "அடுத்த எல்லை",
+    "penaltyDefault": "நிறுவன அபராத இயல்புநிலை",
+    "sendTime": "அனுப்பும் நேரம்", "emailEnabled": "மின்னஞ்சல் இயக்கப்பட்டது", "inAppEnabled": "செயலி அறிவிப்பு இயக்கப்பட்டது",
+    "includeOverdue": "தாமதமாகும்போது நினைவூட்டல்களைத் தொடரவும்", "overdueDays": "நிறுத்து (நாட்கள்)",
+    "recipients": "பெறுநர் மின்னஞ்சல்கள்", "digestLanguage": "சுருக்க மொழி", "testEmail": "சோதனை மின்னஞ்சல் அனுப்பு",
+    "sendDigestNow": "இப்போது சுருக்கத்தை அனுப்பு", "testEmailSuccess": "சோதனை மின்னஞ்சல் வெற்றிகரமாக அனுப்பப்பட்டது",
+    "testEmailFailed": "சோதனை மின்னஞ்சல் தோல்வியடைந்தது", "both": "இரண்டும்", "userLanguage": "பெறுநரின் மொழி"
+  },
+  "reports": {
+    "title": "தணிக்கைப் பதிவுகள்", "auditLog": "தணிக்கைப் பதிவு", "collections": "வசூல்கள்", "penalties": "அபராதங்கள்",
+    "user": "பயனர்", "entity": "பிரிவு", "action": "செயல்", "summary": "சுருக்கம்", "at": "நேரம்",
+    "loanPortfolio": "கடன் இருப்பு", "overdueAging": "தாமதம் / கால அளவு", "customersTab": "வாடிக்கையாளர்கள்",
+    "downloadXlsx": "XLSX பதிவிறக்கு", "downloadPdf": "PDF பதிவிறக்கு", "allStatuses": "அனைத்து நிலைகள்"
+  },
+  "platform": {
+    "title": "தள கன்சோல்", "tenants": "நிறுவனங்கள்", "onboardTenant": "நிறுவனத்தைச் சேர்",
+    "tenantName": "நிறுவனப் பெயர்", "tenantCode": "நிறுவன குறியீடு", "adminName": "நிர்வாகி பெயர்",
+    "adminEmail": "நிர்வாகி மின்னஞ்சல்", "maxCustomers": "வாடிக்கையாளர் ஒதுக்கீடு", "seatUsage": "இடங்கள்",
+    "customerUsage": "வாடிக்கையாளர்கள்", "activeLoans": "செயலில் உள்ள கடன்கள்", "suspend": "இடைநிறுத்து", "reactivate": "மீண்டும் செயல்படுத்து",
+    "resendInvite": "அழைப்பை மீண்டும் அனுப்பு", "editLimits": "வரம்புகளைத் திருத்து", "maxUsers": "அதிகபட்ச பயனர்கள்",
+    "capacity": "கொள்ளளவு", "storageUsed": "பயன்படுத்தப்பட்ட சேமிப்பு", "totalQuota": "மொத்த ஒதுக்கீடு",
+    "totalCustomers": "மொத்த வாடிக்கையாளர்கள்", "duplicateTenantCode": "நிறுவன குறியீடு ஏற்கனவே உள்ளது"
+  },
+  "errors": {
+    "VALIDATION_ERROR": "தயவுசெய்து குறிக்கப்பட்ட புலங்களைச் சரிபார்க்கவும்", "AUTH_REQUIRED": "தயவுசெய்து உள்நுழையவும்",
+    "TOKEN_EXPIRED": "உங்கள் அமர்வு காலாவதியானது, மீண்டும் உள்நுழையவும்", "INVALID_CREDENTIALS": "தவறான நற்சான்றிதழ்கள்",
+    "ACCOUNT_LOCKED": "கணக்கு பூட்டப்பட்டுள்ளது, பின்னர் முயற்சிக்கவும்", "TENANT_SUSPENDED": "இந்த நிறுவனம் இடைநிறுத்தப்பட்டுள்ளது",
+    "FORBIDDEN": "அதைச் செய்ய உங்களுக்கு அனுமதி இல்லை", "NOT_FOUND": "கிடைக்கவில்லை",
+    "CONFLICT": "இது ஏற்கனவே உள்ள தரவுடன் முரண்படுகிறது", "STALE_VERSION": "இந்த பதிவு மாறிவிட்டது, மீண்டும் முயற்சிக்கவும்",
+    "BUSINESS_RULE": "இந்த செயல் அனுமதிக்கப்படவில்லை", "SEAT_LIMIT_REACHED": "பயனர் இட வரம்பு எட்டப்பட்டது",
+    "CUSTOMER_LIMIT_REACHED": "வாடிக்கையாளர் வரம்பு எட்டப்பட்டது", "AUCTION_ALREADY_POSTED": "இந்த காலத்திற்கு ஏலம் ஏற்கனவே பதிவு செய்யப்பட்டது",
+    "DUPLICATE_TENANT_CODE": "நிறுவன குறியீடு ஏற்கனவே உள்ளது", "RATE_LIMITED": "அதிக முயற்சிகள், தயவுசெய்து காத்திருக்கவும்",
+    "INTERNAL_ERROR": "எதிர்பாராத பிழை, மீண்டும் முயற்சிக்கவும்"
+  }
+}

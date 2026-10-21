@@ -1,0 +1,13 @@
+{
+  "name": "Nivora",
+  "short_name": "Nivora",
+  "description": "Every Due. Every Rupee. Under Control.",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#0a2540",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/"
+}
