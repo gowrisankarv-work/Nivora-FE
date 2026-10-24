@@ -5,7 +5,7 @@ import { ArrowLeftOutlined, PlusOutlined, EditOutlined, FileTextOutlined, Delete
 import { useTranslation } from "react-i18next";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { api, apiErrorCode } from "@/api/client";
-import type { Customer, Guarantor, Loan, Installment } from "@/api/types";
+import type { Customer, Guarantor, Loan, Installment, PageResponse } from "@/api/types";
 import { formatInr, formatDate } from "@/utils/format";
 import { useAuth } from "@/auth/AuthContext";
 import { PenaltyConfigForm } from "@/components/PenaltyConfigForm";
@@ -19,39 +19,55 @@ export default function CustomerDetail() {
   const { user } = useAuth();
   const queryClient = useQueryClient();
   const [editOpen, setEditOpen] = useState(false);
+  const [loanPage, setLoanPage] = useState(0);
+  const [loanPageSize, setLoanPageSize] = useState(10);
 
   const { data: customer } = useQuery({
     queryKey: ["customer", id],
     queryFn: async () => (await api.get<Customer>(`/customers/${id}`)).data,
   });
 
-  const { data: loans } = useQuery({
-    queryKey: ["loans", "customer", id],
-    queryFn: async () => (await api.get<{ content: Loan[] }>("/loans", { params: { size: 100 } })).data.content.filter((l) => l.customerId === id),
+  const { data: activeLoans } = useQuery({
+    queryKey: ["customer-active-loans", id],
+    queryFn: async () => (await api.get<Loan[]>(`/customers/${id}/active-loans`)).data,
+    enabled: !!id,
+  });
+
+  const { data: loansPage, isLoading: loansLoading } = useQuery({
+    queryKey: ["loans", "customer", id, loanPage, loanPageSize],
+    queryFn: async () =>
+      (await api.get<PageResponse<Loan>>("/loans", {
+        params: { customerId: id, page: loanPage, size: loanPageSize },
+      })).data,
     enabled: !!id,
   });
 
   const statusMutation = useMutation({
     mutationFn: async () => {
       const nextStatus = customer!.status === "ACTIVE" ? "INACTIVE" : "ACTIVE";
-      return api.patch(`/customers/${id}/status`, { status: nextStatus, hasLoans: (loans || []).length > 0 });
+      const hasLoans = (loansPage?.totalElements ?? 0) > 0 || (activeLoans?.length ?? 0) > 0;
+      return api.patch(`/customers/${id}/status`, { status: nextStatus, hasLoans });
     },
     onSuccess: () => {
       message.success(t("common.save"));
       queryClient.invalidateQueries({ queryKey: ["customer", id] });
+      queryClient.invalidateQueries({ queryKey: ["customer-active-loans", id] });
+      queryClient.invalidateQueries({ queryKey: ["loans", "customer", id] });
     },
     onError: (e) => message.error(t(`errors.${apiErrorCode(e)}`)),
   });
 
   if (!customer) return null;
 
-  const outstanding = (loans || []).reduce((sum, l) => sum + (l.totalPayableAmount - l.paidAmount), 0);
+  const outstanding = (activeLoans || []).reduce((sum, l) => sum + (l.totalPayableAmount - l.paidAmount), 0);
+
+  const statusColor: Record<string, string> = { ACTIVE: "success", CLOSED: "blue", CANCELLED: "default" };
 
   const loanColumns = [
     { title: t("loans.loanNo"), dataIndex: "loanNo" },
     { title: t("loans.method"), dataIndex: "method", render: (m: string) => t(`loans.${camel(m)}`, m) },
     { title: t("loans.outstanding"), dataIndex: "totalPayableAmount", render: (_: number, l: Loan) => formatInr(l.totalPayableAmount - l.paidAmount) },
-    { title: t("common.status"), dataIndex: "status", render: (s: string) => <Tag>{t(`loans.${s.toLowerCase()}`, s)}</Tag> },
+    { title: t("common.status"), dataIndex: "status", render: (s: string) => <Tag color={statusColor[s] || "default"}>{t(`loans.${s.toLowerCase()}`, s)}</Tag> },
   ];
 
   const formatAddress = (a?: Customer["addressCurrent"]) =>
@@ -99,7 +115,28 @@ export default function CustomerDetail() {
     },
     {
       key: "loans", label: t("customers.loans"),
-      children: <Table rowKey="id" columns={loanColumns} dataSource={loans} onRow={(l) => ({ onClick: () => navigate(`/loans/${l.id}`) })} pagination={false} />,
+      children: (
+        <Table
+          rowKey="id"
+          columns={loanColumns}
+          dataSource={loansPage?.content}
+          loading={loansLoading}
+          onRow={(l) => ({ onClick: () => navigate(`/loans/${l.id}`), style: { cursor: "pointer" } })}
+          pagination={{
+            current: loanPage + 1,
+            pageSize: loanPageSize,
+            total: loansPage?.totalElements,
+            showSizeChanger: true,
+            pageSizeOptions: ["10", "25", "50"],
+            onChange: (p, s) => {
+              setLoanPage(p - 1);
+              if (s && s !== loanPageSize) {
+                setLoanPageSize(s);
+              }
+            },
+          }}
+        />
+      ),
     },
     {
       key: "guarantors", label: t("customers.guarantors"),
@@ -154,7 +191,16 @@ export default function CustomerDetail() {
         <Tabs items={tabs} />
       </Card>
 
-      <CustomerFormDrawer open={editOpen} onClose={() => setEditOpen(false)} customer={customer} onSaved={() => {}} />
+      <CustomerFormDrawer
+        open={editOpen}
+        onClose={() => setEditOpen(false)}
+        customer={customer}
+        onSaved={() => {
+          queryClient.invalidateQueries({ queryKey: ["customer", id] });
+          queryClient.invalidateQueries({ queryKey: ["customer-active-loans", id] });
+          queryClient.invalidateQueries({ queryKey: ["loans", "customer", id] });
+        }}
+      />
     </div>
   );
 }
