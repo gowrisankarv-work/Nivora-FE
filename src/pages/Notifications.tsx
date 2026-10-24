@@ -7,7 +7,7 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useState } from "react";
 import { api } from "@/api/client";
 import type { Notification, PageResponse } from "@/api/types";
-import { formatDate } from "@/utils/format";
+import { formatDateTime } from "@/utils/format";
 
 const iconFor: Record<string, { icon: ReactNode; tone: string }> = {
   DIGEST: { icon: <MailOutlined />, tone: "var(--c-info)" },
@@ -66,7 +66,7 @@ export default function NotificationsPage() {
                   <List.Item.Meta
                     avatar={<Avatar style={{ background: "#fff", border: `1px solid ${cfg.tone}33`, color: cfg.tone }} icon={cfg.icon} />}
                     title={<Space>{n.title} {!n.read && <Tag color="success">New</Tag>}</Space>}
-                    description={<>{n.message}<br /><small style={{ color: "var(--c-text-faint)" }}>{formatDate(n.createdAt, i18n.language)}</small></>}
+                    description={<>{n.message}<br /><small style={{ color: "var(--c-text-faint)" }}>{formatDateTime(n.createdAt, i18n.language)}</small></>}
                   />
                 </List.Item>
               );

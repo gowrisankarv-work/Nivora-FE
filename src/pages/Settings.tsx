@@ -141,7 +141,7 @@ function RemindersTab() {
   return (
     <Form
       layout="vertical"
-      initialValues={{ ...reminders, sendTime: dayjs(reminders.sendTime, "HH:mm:ss"), recipients: reminders.recipients?.join(", ") }}
+      initialValues={{ ...reminders, sendTime: reminders.sendTime ? dayjs(reminders.sendTime, ["HH:mm:ss", "HH:mm"]) : dayjs("08:00:00", "HH:mm:ss"), recipients: reminders.recipients?.join(", ") }}
       onFinish={(v) => mutation.mutate(v)}
     >
       <Form.Item name="sendTime" label={t("settings.sendTime")}><TimePicker format="HH:mm" /></Form.Item>

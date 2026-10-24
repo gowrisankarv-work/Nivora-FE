@@ -6,7 +6,7 @@ import { useQuery } from "@tanstack/react-query";
 import dayjs, { Dayjs } from "dayjs";
 import { api } from "@/api/client";
 import type { AuditLogEntry, PageResponse, ReportResult } from "@/api/types";
-import { formatDate } from "@/utils/format";
+import { formatDate, formatDateTime } from "@/utils/format";
 
 const METHODS = ["FLAT", "REDUCING_BALANCE", "INTEREST_ONLY", "COMPOUND", "CUSTOM_SCHEDULE"];
 
@@ -256,7 +256,7 @@ function AuditTab() {
   });
 
   const columns = [
-    { title: t("reports.at"), dataIndex: "at", render: (d: string) => formatDate(d, i18n.language) },
+    { title: t("reports.at"), dataIndex: "at", render: (d: string) => formatDateTime(d, i18n.language) },
     { title: t("reports.user"), dataIndex: "userId" },
     { title: t("reports.entity"), dataIndex: "entity" },
     { title: t("reports.action"), dataIndex: "action" },
