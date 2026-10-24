@@ -85,6 +85,7 @@ export interface Loan {
   tenure?: { value: number; unit: TenureUnit }; instalmentCount: number; startDate: string; firstDueDate: string;
   instalmentAmount: number; totalInterestAmount: number; totalPayableAmount: number; paidAmount: number;
   penalty?: PenaltyConfig; defaultsSource: "FORM" | "CUSTOMER" | "TENANT" | "SYSTEM"; status: LoanStatus; notes?: string;
+  customerNo?: string; customerName?: string; customerPhone?: string;
 }
 
 export interface Installment {
