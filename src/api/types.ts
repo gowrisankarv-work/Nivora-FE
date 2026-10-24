@@ -137,7 +137,7 @@ export interface User {
 
 export interface Notification {
   id: string; key?: string; type: "DIGEST" | "EMAIL_FAILED" | "SYSTEM"; title: string; message: string;
-  link?: string; read: boolean; createdAt: string;
+  link?: string; read: boolean; createdAt: string; mailContent?: string; counts?: Record<string, number>;
 }
 
 export interface DashboardSummary {

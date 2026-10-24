@@ -133,7 +133,10 @@
   },
   "notifications": {
     "title": "Notifications", "markAllRead": "Mark all read", "unreadOnly": "Unread only",
-    "noNotifications": "No notifications", "digest": "Daily Digest", "emailFailed": "Email could not be sent"
+    "noNotifications": "No notifications", "digest": "Daily Digest", "emailFailed": "Email could not be sent",
+    "system": "System", "type": "Type", "subject": "Subject", "date": "Date & Time",
+    "status": "Status", "read": "Read", "unread": "Unread", "viewMail": "View Mail",
+    "mailContent": "Mail Content", "openLink": "Open Link", "noMailContent": "No additional mail content for this notification."
   },
   "settings": {
     "title": "Settings", "general": "General", "defaults": "Defaults", "reminders": "Reminders",
